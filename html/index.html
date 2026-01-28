@@ -4,196 +4,126 @@
   <meta charset="UTF-8" />
   <title>AI DevSecOps Platform</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
     }
 
     header {
-      background: linear-gradient(135deg, #020617, #020617);
-      padding: 25px;
-      border-bottom: 1px solid #1f2933;
+      padding: 30px;
       text-align: center;
+      background: rgba(0,0,0,0.4);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
     }
 
-    header h1 {
+    h1 {
       margin: 0;
-      font-size: 2.4rem;
-      color: #38bdf8;
-    }
-
-    header p {
-      margin-top: 8px;
-      color: #94a3b8;
-    }
-
-    .status-bar {
-      margin-top: 15px;
-      display: inline-block;
-      padding: 8px 18px;
-      border-radius: 20px;
-      background: #16a34a;
-      color: #022c22;
-      font-weight: bold;
+      font-size: 2.5rem;
     }
 
     .container {
-      max-width: 1100px;
+      padding: 40px;
+      max-width: 1000px;
       margin: auto;
-      padding: 40px 20px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
     }
 
     .card {
-      background: #020617;
-      border: 1px solid #1f2933;
+      background: rgba(255,255,255,0.05);
+      padding: 25px;
       border-radius: 12px;
-      padding: 22px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
-      transition: transform 0.2s ease;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
     }
 
-    .card:hover {
-      transform: translateY(-3px);
-    }
-
-    .card h2 {
-      margin-top: 0;
-      color: #7dd3fc;
-      font-size: 1.3rem;
-    }
-
-    .badge {
+    .status {
       display: inline-block;
-      padding: 6px 12px;
-      margin: 4px;
-      border-radius: 10px;
-      background: #020617;
-      border: 1px solid #1f2933;
-      color: #38bdf8;
-      font-size: 0.85rem;
-    }
-
-    .ok {
-      color: #22c55e;
-    }
-
-    .warn {
-      color: #facc15;
-    }
-
-    .danger {
-      color: #ef4444;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background: #00c853;
+      color: #000;
+      font-weight: bold;
     }
 
     footer {
       text-align: center;
-      padding: 25px;
-      border-top: 1px solid #1f2933;
-      color: #64748b;
+      padding: 20px;
+      opacity: 0.7;
       font-size: 0.9rem;
     }
 
-    .meta {
-      font-size: 0.9rem;
-      color: #94a3b8;
-      margin-top: 10px;
-    }
-
-    .highlight {
-      color: #38bdf8;
-      font-weight: bold;
+    .tech span {
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.1);
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>🚀 AI-Powered DevSecOps Platform</h1>
-  <p>Automated CI/CD • Security • AIOps Incident Response</p>
-  <div class="status-bar">✅ Deployment Successful</div>
-</header>
+  <header>
+    <h1>🚀 AI-Powered DevSecOps Platform</h1>
+    <p>Automated CI/CD • Security • AI Incident Response</p>
+    <div class="status">DEPLOYMENT SUCCESSFUL</div>
+  </header>
 
-<div class="container">
-
-  <div class="grid">
+  <div class="container">
 
     <div class="card">
-      <h2>📦 Application Status</h2>
-      <p class="ok">● Live and running in production</p>
-      <p class="meta">Served via <span class="highlight">Nginx Docker Container</span></p>
-      <p class="meta">Environment: <span class="highlight">Production</span></p>
+      <h2>📦 About This Deployment</h2>
+      <p>
+        This application is automatically deployed using a fully automated
+        <b>DevSecOps + AIOps pipeline</b>.
+      </p>
+      <p>
+        Every Git push triggers Jenkins, runs security scans, builds a Docker image,
+        deploys using Nginx, and monitors failures using AI.
+      </p>
     </div>
 
     <div class="card">
-      <h2>⚙️ CI/CD Pipeline</h2>
-      <ul>
-        <li>✔ GitHub → Jenkins Trigger</li>
-        <li>✔ SonarQube (SAST)</li>
-        <li>✔ OWASP Dependency Scan</li>
-        <li>✔ Trivy Container Scan</li>
-        <li>✔ Docker Build & Deploy</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>🛡️ Security Gates</h2>
-      <p><span class="ok">✔</span> Code Quality Check</p>
-      <p><span class="ok">✔</span> Dependency Vulnerability Scan</p>
-      <p><span class="ok">✔</span> Image Security Scan</p>
-      <p><span class="ok">✔</span> Policy Enforcement</p>
-    </div>
-
-    <div class="card">
-      <h2>🧠 AIOps System</h2>
-      <ul>
-        <li>✔ Auto failure detection</li>
-        <li>✔ Jenkins log fetching</li>
-        <li>✔ Gemini AI root cause analysis</li>
-        <li>✔ Email notification to admin</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>🔧 Technology Stack</h2>
-      <div>
-        <span class="badge">GitHub</span>
-        <span class="badge">Jenkins</span>
-        <span class="badge">Docker</span>
-        <span class="badge">Nginx</span>
-        <span class="badge">SonarQube</span>
-        <span class="badge">OWASP</span>
-        <span class="badge">Trivy</span>
-        <span class="badge">n8n</span>
-        <span class="badge">Gemini AI</span>
+      <h2>⚙️ Pipeline Components</h2>
+      <div class="tech">
+        <span>Jenkins</span>
+        <span>Docker</span>
+        <span>Nginx</span>
+        <span>SonarQube</span>
+        <span>Trivy</span>
+        <span>OWASP</span>
+        <span>n8n</span>
+        <span>Gemini AI</span>
       </div>
     </div>
 
     <div class="card">
-      <h2>📊 Deployment Info</h2>
-      <p>Pipeline: <span class="highlight">aiops-devsecops-demo</span></p>
-      <p>Branch: <span class="highlight">main</span></p>
-      <p>Deploy Mode: <span class="highlight">Automated</span></p>
-      <p>Trigger: <span class="highlight">Git Push</span></p>
+      <h2>🧠 AI Ops Capabilities</h2>
+      <ul>
+        <li>Automatic failure detection</li>
+        <li>Log analysis using Gemini AI</li>
+        <li>Root cause identification</li>
+        <li>Fix suggestions</li>
+        <li>Email alert to administrator</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🛡️ Security Checks</h2>
+      <ul>
+        <li>Static Code Analysis (SonarQube)</li>
+        <li>Dependency Vulnerability Scan (OWASP)</li>
+        <li>Container Image Scan (Trivy)</li>
+      </ul>
     </div>
 
   </div>
 
-</div>
-
-<footer>
-  <p>© 2026 AI DevSecOps Platform | Built by Devansh Naik</p>
-  <p>Enterprise CI/CD • Security Automation • AI Operations</p>
-</footer>
+  <footer>
+    <p>© 2026 AI DevSecOps Platform | Built by Devansh Naik</p>
+  </footer>
 
 </body>
 </html>
