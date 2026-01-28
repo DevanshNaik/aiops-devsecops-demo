@@ -1,10 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>AIOps Nginx Site</title>
+  <meta charset="UTF-8" />
+  <title>AI DevSecOps Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+    }
+
+    header {
+      padding: 30px;
+      text-align: center;
+      background: rgba(0,0,0,0.4);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .status {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background: #00c853;
+      color: #000;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      opacity: 0.7;
+      font-size: 0.9rem;
+    }
+
+    .tech span {
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.1);
+    }
+  </style>
 </head>
 <body>
-  <h1>🚀 Deployed by Jenkins + Docker + Nginx</h1>
-  <p>This page is served by Nginx inside Docker.</p>
+
+  <header>
+    <h1>🚀 AI-Powered DevSecOps Platform</h1>
+    <p>Automated CI/CD • Security • AI Incident Response</p>
+    <div class="status">DEPLOYMENT SUCCESSFUL</div>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>📦 About This Deployment</h2>
+      <p>
+        This application is automatically deployed using a fully automated
+        <b>DevSecOps + AIOps pipeline</b>.
+      </p>
+      <p>
+        Every Git push triggers Jenkins, runs security scans, builds a Docker image,
+        deploys using Nginx, and monitors failures using AI.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>⚙️ Pipeline Components</h2>
+      <div class="tech">
+        <span>Jenkins</span>
+        <span>Docker</span>
+        <span>Nginx</span>
+        <span>SonarQube</span>
+        <span>Trivy</span>
+        <span>OWASP</span>
+        <span>n8n</span>
+        <span>Gemini AI</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🧠 AI Ops Capabilities</h2>
+      <ul>
+        <li>Automatic failure detection</li>
+        <li>Log analysis using Gemini AI</li>
+        <li>Root cause identification</li>
+        <li>Fix suggestions</li>
+        <li>Email alert to administrator</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🛡️ Security Checks</h2>
+      <ul>
+        <li>Static Code Analysis (SonarQube)</li>
+        <li>Dependency Vulnerability Scan (OWASP)</li>
+        <li>Container Image Scan (Trivy)</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 AI DevSecOps Platform | Built by Devansh Naik</p>
+  </footer>
+
 </body>
 </html>
